@@ -18,6 +18,17 @@
 		034159F0A3BED7DDF0ECD82ECDC9C9D9 /* HCObjectReturnGetter.h in Headers */ = {isa = PBXBuildFile; fileRef = DB2D38D05AF87B889FF7A160600D0CB0 /* HCObjectReturnGetter.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		03DACE8A9022F65B289ED8495FF1561F /* HCGenericTestFailureReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 744BFC31C1FE9DDD5A06643C583FFC1C /* HCGenericTestFailureReporter.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		042EF977777D5602F40135B230D917D1 /* MKTAtLeastNumberOfInvocationsChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E498C8508EFE01DE07BEF6C2372D5CA /* MKTAtLeastNumberOfInvocationsChecker.m */; };
+		0448E2821DF7621F00A20FAC /* SegmentFlurryIntegration.h in Headers */ = {isa = PBXBuildFile; fileRef = 0448E2801DF7621F00A20FAC /* SegmentFlurryIntegration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0448E28A1DF7624A00A20FAC /* SEGFlurryIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EDCF8ACB60E47E28639603D3089026 /* SEGFlurryIntegration.m */; };
+		0448E28B1DF7624C00A20FAC /* SEGFlurryIntegrationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B724C3E382849F5C65642000CC3F257 /* SEGFlurryIntegrationFactory.m */; };
+		0448E28C1DF7624E00A20FAC /* Segment-Flurry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D0DAB26AA042AAB811547E05F23834 /* Segment-Flurry-dummy.m */; };
+		0448E28E1DF7626400A20FAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0448E28D1DF7626400A20FAC /* Foundation.framework */; };
+		0448E28F1DF7627200A20FAC /* SEGFlurryIntegration.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F92DF9E2F11ACD2EC8FBCF9EC333DE2 /* SEGFlurryIntegration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0448E2901DF7627500A20FAC /* SEGFlurryIntegrationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A3C19EBFA45244696C85784480EE3F3 /* SEGFlurryIntegrationFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0448E2931DF7635300A20FAC /* libFlurry_7.6.6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87BA6FB07C4631C3AADB0ECAF6724CD6 /* libFlurry_7.6.6.a */; };
+		0448E2951DF7636300A20FAC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0448E2941DF7636300A20FAC /* SystemConfiguration.framework */; };
+		0448E2961DF7638900A20FAC /* libAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 985E2A44BEA36644F784DCC9807FEB7B /* libAnalytics.a */; };
+		0448E2971DF7638B00A20FAC /* libFlurry-iOS-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE373D6B58D48E2BEC1688CED2B5A01D /* libFlurry-iOS-SDK.a */; };
 		04EC56AD31461D2B256F8A4BC624BB1E /* MKTMockingProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C3C0B2037ACCD73B749786F8438FC22 /* MKTMockingProgress.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		04F4FDD1E5C2560A53188B415DAC36B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 783788FD1CE4F546DB37C764800959FB /* Foundation.framework */; };
 		055F3E0F53E1673E5D25B6556ADF9B6D /* HCSubstringMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 0370548BF2FE8A62813057628069E4DD /* HCSubstringMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -476,6 +487,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0448E2861DF7623A00A20FAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8056D060CDB25304FD112AB00556C3F3;
+			remoteInfo = Analytics;
+		};
+		0448E2881DF7623A00A20FAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D079C0B8D193CBDF60F39822F384E43F;
+			remoteInfo = "Flurry-iOS-SDK";
+		};
 		2A3B49840F7A84602CB6E1B403500600 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -564,6 +589,11 @@
 		0367DEDA1443CCD5287325ACA0408BB5 /* HCUnsignedLongLongReturnGetter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCUnsignedLongLongReturnGetter.h; path = Source/Core/Helpers/ReturnValueGetters/HCUnsignedLongLongReturnGetter.h; sourceTree = "<group>"; };
 		0370548BF2FE8A62813057628069E4DD /* HCSubstringMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCSubstringMatcher.h; path = Source/Library/Text/HCSubstringMatcher.h; sourceTree = "<group>"; };
 		03EE38581E914D98F0EC9273F58CE455 /* SEGScreenPayload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGScreenPayload.h; path = Analytics/Classes/Integrations/SEGScreenPayload.h; sourceTree = "<group>"; };
+		0448E27E1DF7621F00A20FAC /* SegmentFlurryIntegration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SegmentFlurryIntegration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0448E2801DF7621F00A20FAC /* SegmentFlurryIntegration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegmentFlurryIntegration.h; sourceTree = "<group>"; };
+		0448E2811DF7621F00A20FAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0448E28D1DF7626400A20FAC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		0448E2941DF7636300A20FAC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		057020232437B612995E16A9CCE7E7BD /* MKTBoolReturnSetter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTBoolReturnSetter.m; path = Source/OCMockito/Helpers/ReturnValueSetters/MKTBoolReturnSetter.m; sourceTree = "<group>"; };
 		06230D02A17E875C6C421B0DDE9638DD /* HCGenericTestFailureReporter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCGenericTestFailureReporter.m; path = Source/Core/Helpers/TestFailureReporters/HCGenericTestFailureReporter.m; sourceTree = "<group>"; };
 		063E10EC184AACF7C04528AF55E13663 /* Pods-Segment-Flurry_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Segment-Flurry_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -1046,6 +1076,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0448E27A1DF7621F00A20FAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0448E2961DF7638900A20FAC /* libAnalytics.a in Frameworks */,
+				0448E2971DF7638B00A20FAC /* libFlurry-iOS-SDK.a in Frameworks */,
+				0448E2931DF7635300A20FAC /* libFlurry_7.6.6.a in Frameworks */,
+				0448E28E1DF7626400A20FAC /* Foundation.framework in Frameworks */,
+				0448E2951DF7636300A20FAC /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		199EF76AC47B3EE9FA80BE53835AB7B1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1135,6 +1177,15 @@
 			path = "Flurry-iOS-SDK";
 			sourceTree = "<group>";
 		};
+		0448E27F1DF7621F00A20FAC /* SegmentFlurryIntegration */ = {
+			isa = PBXGroup;
+			children = (
+				0448E2801DF7621F00A20FAC /* SegmentFlurryIntegration.h */,
+				0448E2811DF7621F00A20FAC /* Info.plist */,
+			);
+			path = SegmentFlurryIntegration;
+			sourceTree = "<group>";
+		};
 		17077D5B3B7248E1A6A7D0B4AA0AF8DD /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -1150,6 +1201,8 @@
 		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0448E2941DF7636300A20FAC /* SystemConfiguration.framework */,
+				0448E28D1DF7626400A20FAC /* Foundation.framework */,
 				17077D5B3B7248E1A6A7D0B4AA0AF8DD /* iOS */,
 			);
 			name = Frameworks;
@@ -1178,6 +1231,7 @@
 				5F3154D0B271A6B64E0298B06BC7C60F /* libPods-Segment-Flurry_Tests.a */,
 				2A2A8ECE842481A309333C2D1E258875 /* libSegment-Flurry.a */,
 				700CF0A965A56B13BA0196FA642A9C97 /* libSpecta.a */,
+				0448E27E1DF7621F00A20FAC /* SegmentFlurryIntegration.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1529,6 +1583,7 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				FA6338E8767E45F68A7E568B4A54FBE4 /* Development Pods */,
+				0448E27F1DF7621F00A20FAC /* SegmentFlurryIntegration */,
 				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
 				4C8CC5ACA5B04EED16913A2E06332510 /* Pods */,
 				27C011DE45B7A37181E04CB684A11247 /* Products */,
@@ -1847,6 +1902,16 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		0448E27B1DF7621F00A20FAC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0448E2821DF7621F00A20FAC /* SegmentFlurryIntegration.h in Headers */,
+				0448E28F1DF7627200A20FAC /* SEGFlurryIntegration.h in Headers */,
+				0448E2901DF7627500A20FAC /* SEGFlurryIntegrationFactory.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		356CCF6F48C4EB88A59F28A4C45CB8B5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -2147,6 +2212,25 @@
 			productReference = 700CF0A965A56B13BA0196FA642A9C97 /* libSpecta.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		0448E27D1DF7621F00A20FAC /* SegmentFlurryIntegration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0448E2831DF7621F00A20FAC /* Build configuration list for PBXNativeTarget "SegmentFlurryIntegration" */;
+			buildPhases = (
+				0448E2791DF7621F00A20FAC /* Sources */,
+				0448E27A1DF7621F00A20FAC /* Frameworks */,
+				0448E27B1DF7621F00A20FAC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0448E2871DF7623A00A20FAC /* PBXTargetDependency */,
+				0448E2891DF7623A00A20FAC /* PBXTargetDependency */,
+			);
+			name = SegmentFlurryIntegration;
+			productName = SegmentFlurryIntegration;
+			productReference = 0448E27E1DF7621F00A20FAC /* SegmentFlurryIntegration.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		1AAFE4FBBE53BE164885C328E4B824E6 /* OCMockito */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 211E7C6D1E743361BF1E8C3505BA31E7 /* Build configuration list for PBXNativeTarget "OCMockito" */;
@@ -2299,6 +2383,12 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					0448E27D1DF7621F00A20FAC = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -2321,11 +2411,22 @@
 				421167DF8B0E0D4B647AFC0C342A0F14 /* Pods-Segment-Flurry_Tests */,
 				49E91AA5D6625B2E29AC5F4D4491055D /* Segment-Flurry */,
 				03392BEB06DE0AE0551DBA0471260EFD /* Specta */,
+				0448E27D1DF7621F00A20FAC /* SegmentFlurryIntegration */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0448E2791DF7621F00A20FAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0448E28A1DF7624A00A20FAC /* SEGFlurryIntegration.m in Sources */,
+				0448E28B1DF7624C00A20FAC /* SEGFlurryIntegrationFactory.m in Sources */,
+				0448E28C1DF7624E00A20FAC /* Segment-Flurry-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		143C0831AA95D723669324010D835391 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2613,6 +2714,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0448E2871DF7623A00A20FAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8056D060CDB25304FD112AB00556C3F3 /* Analytics */;
+			targetProxy = 0448E2861DF7623A00A20FAC /* PBXContainerItemProxy */;
+		};
+		0448E2891DF7623A00A20FAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D079C0B8D193CBDF60F39822F384E43F /* Flurry-iOS-SDK */;
+			targetProxy = 0448E2881DF7623A00A20FAC /* PBXContainerItemProxy */;
+		};
 		0A3AB379054238102E1C6BD448D82037 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = OCMockito;
@@ -2694,6 +2805,85 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0448E2841DF7621F00A20FAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C8ED7E462702B8BCD993E6851E57F4E /* Segment-Flurry.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = SegmentFlurryIntegration/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flurry-iOS-SDK/Flurry",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0448E2851DF7621F00A20FAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C8ED7E462702B8BCD993E6851E57F4E /* Segment-Flurry.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = SegmentFlurryIntegration/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flurry-iOS-SDK/Flurry",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -3137,6 +3327,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0448E2831DF7621F00A20FAC /* Build configuration list for PBXNativeTarget "SegmentFlurryIntegration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0448E2841DF7621F00A20FAC /* Debug */,
+				0448E2851DF7621F00A20FAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		211E7C6D1E743361BF1E8C3505BA31E7 /* Build configuration list for PBXNativeTarget "OCMockito" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
